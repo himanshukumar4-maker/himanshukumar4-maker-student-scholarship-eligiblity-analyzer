@@ -1,0 +1,89 @@
+# Student Scholarship Eligibility Analyzer (PS No. 72)
+
+**Institution:** Rungta International Skills University — School of Computer Science and Engineering  
+**Program:** Bachelor of Technology in Computer Science and Engineering  
+
+---
+
+## 📋 Overview
+The **Student Scholarship Eligibility Analyzer** is a Python-based data analysis tool designed to evaluate student datasets (`students.csv`) and determine scholarship eligibility based on academic performance, attendance, and annual family income. It utilizes `pandas` and `numpy` for data processing, filtering, and statistical aggregation.
+
+---
+
+## ⚙️ Eligibility & Scholarship Rules
+A student is evaluated against the following criteria:
+
+1. **Base Eligibility:**
+   * **Attendance:** $\ge 75\%$
+   * **Marks:** $\ge 75\%$
+   * **Family Income:** $\le \text{Rs. } 500,000$ per year  
+   *(If any of these conditions fail, the student is marked as **Not Eligible**).*
+
+2. **Scholarship Tiers (for Eligible Students):**
+   * **Full Scholarship ($\text{Rs. } 50,000$):** Marks $\ge 90\%$ AND Family Income $\le \text{Rs. } 300,000$
+   * **Partial Scholarship ($\text{Rs. } 25,000$):** All other eligible students
+
+---
+
+## ✨ Features
+* **Robust Data Validation:** Automatically detects and skips malformed rows or non-numeric entries (e.g., invalid marks/income) with clear console warnings.
+* **Eligibility Classification (Menu Option 1):** Displays individual student status (`Full`, `Partial`, or `Not Eligible`) alongside the awarded scholarship amount.
+* **Statistical Summary (Menu Option 2):** Aggregates total eligible/ineligible counts, full vs. partial distributions, total funds disbursed, and average marks of eligible candidates.
+* **Performance Filtering (Menu Option 3):** Filters and lists students meeting or exceeding a specified minimum mark threshold (e.g., $\ge 85\%$).
+
+---
+
+## 🛠️ Prerequisites & Installation
+Ensure you have **Python 3.x** installed along with the required libraries:
+
+```bash
+pip install pandas numpy
+```
+
+---
+
+## 🚀 Usage
+
+1. **Prepare the Input File (`students.csv`):**
+   Create a CSV file containing student records in the format `Name,Marks,Income,Attendance` (no header row required):
+   ```csv
+   Aman,92,250000,90
+   Riya,80,400000,85
+   Karan,60,200000,95
+   Neha,88,700000,80
+   ```
+
+2. **Run the Analyzer:**
+   Execute the script via the command line by passing the path to your CSV file:
+   ```bash
+   python solution.py students.csv
+   ```
+
+---
+
+## 📊 Sample Output
+
+```text
+--- Menu option 1 (Eligibility) ---
+Aman | Full | Rs. 50000
+Riya | Partial | Rs. 25000
+Karan | Not Eligible
+Neha | Not Eligible
+
+--- Menu option 2 (Summary) ---
+(a) Eligible: 2 | Not Eligible: 2 | Full: 1 | Partial: 1
+Total scholarship: Rs. 75000 | Average marks (eligible): 86.00
+
+--- Menu option 3 (Filter by minimum marks: 85) ---
+Aman | 92
+Neha | 88
+```
+
+---
+
+## 📁 Project Structure
+```text
+├── solution.py      # Main Python script containing validation, logic, and reporting
+├── students.csv     # Sample input dataset
+└── README.md        # Project documentation
+```
