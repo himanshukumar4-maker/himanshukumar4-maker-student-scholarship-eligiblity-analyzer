@@ -136,10 +136,8 @@ Neha | Not Eligible
 
 **Test Case 1 Screenshot**
 
-```{=html}
-<!-- Add your Test Case 1 screenshot below. Save the image in the repository, for example: images/test-case-1.png. -->
-```
-![Test Case 1 -- Normal Input](images/test-case-1.png)
+
+![Test Case 1 -- Normal Input](images/OUTPUT-1.png)
 
 ------------------------------------------------------------------------
 
@@ -163,10 +161,7 @@ Sita | Partial | Rs. 25000
 
 **Test Case 2 Screenshot**
 
-```{=html}
-<!-- Add your Test Case 2 screenshot below. Save the image in the repository, for example: images/test-case-2.png. -->
-```
-![Test Case 2 -- Boundary / Minimum Input](images/test-case-2.png)
+![Test Case 2 -- Boundary / Minimum Input](images/OUTPUT-2.png)
 
 ------------------------------------------------------------------------
 
@@ -186,10 +181,8 @@ Invalid marks for Amit: 'abc'. Row skipped.
 
 **Test Case 3 Screenshot**
 
-```{=html}
-<!-- Add your Test Case 3 screenshot below. Save the image in the repository, for example: images/test-case-3.png. -->
-```
-![Test Case 3 -- Invalid Input](images/test-case-3.png)
+
+![Test Case 3 -- Invalid Input](images/OUTPUT-3.png)
 
 ------------------------------------------------------------------------
 
@@ -212,10 +205,8 @@ Neha | 88
 
 **Test Case 4 Screenshot**
 
-```{=html}
-<!-- Add your Test Case 4 screenshot below. Save the image in the repository, for example: images/test-case-4.png. -->
-```
-![Test Case 4 -- Summary and Marks Filtering](images/test-case-4.png)
+
+![Test Case 4 -- Summary and Marks Filtering](images/OUTPUT-4.png)
 
 ------------------------------------------------------------------------
 
